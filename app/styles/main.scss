@@ -1,8 +1,10 @@
+$turing-blue: #05c2d1;
+
 body {
   font-family: 'Roboto', sans-serif !important;
 }
 
-.navbar.navbar-default {
+.navbar.navbar-clear {
   background-color: transparent;
   border: 0px none;
   margin-bottom: 0;
@@ -21,6 +23,10 @@ body {
   font-family: 'Raleway', sans-serif;
   size: 4px;
   text-shadow: 2px 2px 20px #000;
+}
+
+.navbar-opaque {
+  background-color: rgba(30 , 30, 30, 1);
 }
 
 .navbar-brand > span {

@@ -1,7 +1,8 @@
 # Mentor-ship-frontend
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is the front end for the Turing MentorSHIP project. It is written in Ember with Bootstrap 3.
+
+![mentorship](https://s3.amazonaws.com/f.cl.ly/items/1o2y3w262I2b0A2G1a3B/Screen%20Shot%202016-07-20%20at%209.11.26%20PM.png?v=d5da8526)
 
 ## Prerequisites
 
@@ -15,33 +16,18 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
+* `git clone git@github.com:turingMentorSHIP/MentorSHIP-FrontEnd.git`
+* cd MentorSHIP-FrontEnd
 * `npm install`
-* `bower install`
 
 ## Running / Development
 
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+### Production
 
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
+* The Production Version will live here: http://turing-mentorship.herokuapp.com/
 
 ## Further Reading / Useful Links
 
@@ -50,4 +36,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
