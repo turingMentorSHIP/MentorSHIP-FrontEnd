@@ -1,0 +1,7 @@
+<nav class="navbar navbar-default navbar-opaque">
+  {{partial 'navbar'}}
+</nav>
+
+{{#each model as |tz|}}
+  <h3>{{tz.name}}</h3>
+{{/each}}
