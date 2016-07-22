@@ -138,3 +138,30 @@ i.fa.fa-github-square {
     background-color: black;
   }
 }
+
+.mentor-panel {
+  margin-bottom: 10px;
+  height: 550px;
+}
+
+.panel {
+  border-radius: 0px;
+}
+
+section.page-header {
+  text-align: center;
+  font-family: 'Raleway'
+  h1 {
+    color: red;
+  }
+}
+
+.index-image {
+  padding: 0px;
+}
+
+.mentor-name {
+  text-align: center;
+  font-size: 36px;
+  color: $turing-blue;
+}

@@ -2,6 +2,29 @@
   {{partial 'navbar'}}
 </nav>
 
-{{#each model as |tz|}}
-  <h3>{{tz.name}}</h3>
-{{/each}}
+
+<div class="container">
+  <section class="page-header">
+    <h1>MENTORS</h1>
+    Here's a list of mentors! Click to get details!
+  </section>
+  {{#each model as |mentor|}}
+  <div class="col-md-4 mentor-panel">
+    <div class="panel panel-default">
+      <ul class="list-group">
+        <li class="list-group-item index-image"><img src="{{mentor.githubAvatar}}" width="100%" /></li>
+        <li class="list-group-item">
+          <h4 class="list-group-item-heading mentor-name">{{mentor.name}}</h4>
+        </li>
+        <li class="list-group-item">
+          <h4 class="list-group-item-heading">Location: {{mentor.location}}</h4>
+          <h4 class="list-group-item-heading">Timezone: {{mentor.timezone}}</h4>
+        </li>
+        <li class="list-group-item">
+          <p class="list-group-item-text"><a href="#">View details about {{mentor.name}}</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  {{/each}}
+</div>
