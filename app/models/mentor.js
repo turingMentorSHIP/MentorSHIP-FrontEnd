@@ -5,6 +5,7 @@ import DS from 'ember-data';
 // import { hasMany } from 'ember-data/relationships';
 
 export default Model.extend({
+  _id: attr(),
   githubAvatar: attr(),
   name: attr(),
   email: attr(),
