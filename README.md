@@ -17,7 +17,7 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone git@github.com:turingMentorSHIP/MentorSHIP-FrontEnd.git`
-* cd MentorSHIP-FrontEnd
+* `cd MentorSHIP-FrontEnd`
 * `npm install`
 
 ## Running / Development
