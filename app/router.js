@@ -10,6 +10,8 @@ Router.map(function() {
   this.route('sign-up');
   this.route('mentors');
   this.route('mentor', { path: '/mentor/:mentor_id' });
+  this.route('students');
+  this.route('student', { path: '/student/:student_id' });
 });
 
 export default Router;

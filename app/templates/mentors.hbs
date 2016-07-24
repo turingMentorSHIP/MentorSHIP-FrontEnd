@@ -11,7 +11,7 @@
   <div class="col-md-4 mentor-panel">
     <div class="panel panel-default">
       <ul class="list-group">
-        <li class="list-group-item index-image"><img src="{{mentor.githubAvatar}}" width="100%" /></li>
+        <li class="list-group-item index-image"><img src="{{mentor.github_avatar}}" width="100%" /></li>
         <li class="list-group-item">
           <h4 class="list-group-item-heading mentor-name">{{mentor.name}}</h4>
         </li>
@@ -20,7 +20,7 @@
           <h4 class="list-group-item-heading">Timezone: {{mentor.timezone}}</h4>
         </li>
         <li class="list-group-item">
-          <p class="list-group-item-text"><a href="#">View details about {{#link-to 'mentor' mentor}}{{mentor.name}}{{/link-to}}</a></p>
+          <p class="list-group-item-text">{{#link-to 'mentor' mentor}}View details about {{mentor.name}}{{/link-to}}</p>
         </li>
       </ul>
     </div>
