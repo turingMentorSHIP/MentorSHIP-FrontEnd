@@ -1,0 +1,28 @@
+<nav class="navbar navbar-default navbar-opaque">
+  {{partial 'navbar'}}
+</nav>
+
+<div class="container">
+  <section class="page-header">
+    <h1>STUDENTS</h1>
+    Here's a list of students! Click to get details!
+  </section>
+  {{#each model as |student|}}
+  <div class="col-md-4 mentor-panel">
+    <div class="panel panel-default">
+      <ul class="list-group">
+        <li class="list-group-item index-image"><img src="{{student.github_avatar}}" width="100%" /></li>
+        <li class="list-group-item">
+          <h4 class="list-group-item-heading mentor-name">{{student.name}}</h4>
+        </li>
+        <li class="list-group-item">
+          <h4 class="list-group-item-heading">Cohort: {{student.cohort}}</h4>
+        </li>
+        <li class="list-group-item">
+          <p class="list-group-item-text">{{#link-to 'student' student}}View details about {{student.name}}{{/link-to}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  {{/each}}
+</div>
