@@ -21,6 +21,9 @@ body {
   &:hover {
     color: #777;
   }
+  &:active {
+    color: #fff;
+  }
   &.active {
     color: $turing-blue;
   }
@@ -44,7 +47,7 @@ body {
 }
 
 .banner-image {
-  height: 950px;
+  height: 990px;
   background-image: url('/assets/images/mentorship.png');
   background-repeat: no-repeat;
   background-size: cover;

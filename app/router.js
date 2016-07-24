@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('mentor', { path: '/mentor/:mentor_id' });
   this.route('students');
   this.route('student', { path: '/student/:student_id' });
+  this.route('how');
 });
 
 export default Router;
