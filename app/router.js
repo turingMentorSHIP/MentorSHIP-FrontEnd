@@ -13,6 +13,8 @@ Router.map(function() {
   this.route('students');
   this.route('student', { path: '/student/:student_id' });
   this.route('how');
+  this.route('start_auth');
+  this.route('welcome');
 });
 
 export default Router;
