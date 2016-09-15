@@ -4,5 +4,12 @@
 
 <h1> hello {{getCookie 'email'}} </h1>
 
+<h1>Authentication value = {{getCookie 'authenticated'}}</h1>  
+
+{{#if (getCookie 'authenticated')}}
+  <h2>Auth!</h2>
+{{else}}
+  <h2>Auth condition fail</h2>
+{{/if}}
 
 <h1>Welcome!</h1>

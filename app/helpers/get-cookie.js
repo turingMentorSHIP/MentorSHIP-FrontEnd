@@ -22,7 +22,13 @@ function cookieValueFromKey (cname) {
 };
 
 function cleanString(stringValue){
-  return stringValue.replace('27%', '@');
+  if (stringValue === 'true') {
+    return true;
+  }
+  else if (stringValue === 'false') {
+    return false
+  }
+  else return stringValue.replace('27%', '@');
 };
 
 export default Ember.Helper.helper(getCookie);
