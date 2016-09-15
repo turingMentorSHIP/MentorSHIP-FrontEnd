@@ -8,9 +8,14 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li>{{#link-to 'how'}}How does it work?{{/link-to}}</li>
-        <li>{{#link-to 'students'}}Browse Students{{/link-to}}</li>
-        <li>{{#link-to 'mentors'}}Browse Mentors{{/link-to}}</li>
-        <li>{{#link-to 'sign-up'}}Sign up{{/link-to}}</li>
+        {{#if (getCookie 'authenticated')}}
+        <li>{{#link-to 'students'}}{{getCookie 'email'}}{{/link-to}}</li>
+        <li>{{#link-to 'students'}}Students{{/link-to}}</li>
+        <li>{{#link-to 'mentors'}}Mentors{{/link-to}}</li>
+        <li><a href="http://localhost:3000/sign_out">Sign Out</a></li>
+        {{else}}
+        <li>{{#link-to 'sign-up'}}Sign Up{{/link-to}}</li>
+        {{/if}}
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
