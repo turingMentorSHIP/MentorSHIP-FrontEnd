@@ -23,6 +23,8 @@ authenticate(identification, password, scope = []) {
 
 
 
+<li><a href="http://localhost:3000/sign_out">Sign Out</a></li>
+<li><a href={{environmentVariables "/sign_out"}}>Sign Out</a></li>
 
-<script type="text/javascript">
-</script>
+<a href="http://localhost:3000/start_auth" class="btn btn-turing btn-lg github-signup"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
+<a href={{environmentVariables "/start_auth"}} class="btn btn-turing btn-lg github-signup"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>

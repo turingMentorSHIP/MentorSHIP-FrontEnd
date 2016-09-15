@@ -9,7 +9,6 @@
       <ul class="nav navbar-nav navbar-right">
         <li>{{#link-to 'how'}}How does it work?{{/link-to}}</li>
         {{#if (getCookie 'authenticated')}}
-        <li>{{#link-to 'students'}}{{getCookie 'email'}}{{/link-to}}</li>
         <li>{{#link-to 'students'}}Students{{/link-to}}</li>
         <li>{{#link-to 'mentors'}}Mentors{{/link-to}}</li>
         <li><a href="http://localhost:3000/sign_out">Sign Out</a></li>
